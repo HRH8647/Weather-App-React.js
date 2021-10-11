@@ -1,0 +1,71 @@
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.label_text {
+    color: #EEEEEE;
+    font-size: 15px;
+    text-align: center;
+    position: relative;
+}
+.label_text::after {
+    position: absolute;
+    content: '';
+    width: 7px;
+    border-radius: 5px;
+    height: 13px;
+    background-color: #EEEEEE;
+    left: 32%;top: 20%;
+}
+.label_text::before {
+    position: absolute;
+    content: '';
+    width: 7px;
+    border-radius: 5px;
+    height: 13px;
+    background-color: #EEEEEE;
+    right: 32%;top: 20%;
+}
+.input_field {
+    width: 60%;
+    height: 1.4em;
+    margin: -5px auto;
+    border-radius: 10px;
+    border: none;
+    text-indent: 15px;
+    text-transform: capitalize;
+}
+.input_field:focus {
+    outline: none;
+}
+span {
+    background-color: #185ADB;
+    padding: 2px 3px;
+    border-radius: 5px;
+    margin: -4px auto;
+    color: #EEEEEE;
+    font-size: .6em;
+    text-transform: capitalize;
+}
+.dataBox {
+    margin: 10px auto 0 auto;
+    width: 60%;
+    height: auto;
+    padding: 5px;
+    background-color: #EEEEEE;
+    border-radius: 4px;
+    font-size: 10px;
+    text-align: center;
+}
+.tempBox {
+    margin: 10px auto -5px auto;
+    width: 63%;
+    height: auto;
+    padding: 5px;
+    background-color: #FFE459;
+    color: #000;
+    border-radius: 4px;
+    font-size: 10px;
+    text-align: center;
+}

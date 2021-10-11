@@ -1,0 +1,17 @@
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    user-select: none;
+}
+.box {
+    /* background-color: #3D2C8D; */
+    background-image: url('../src/image/weather.jpg');
+    background-size: contain;
+    width: 20em;
+    height: 15em;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #916BBF;
+}

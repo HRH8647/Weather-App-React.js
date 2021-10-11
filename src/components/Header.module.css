@@ -1,0 +1,14 @@
+.header_text {
+    color: #EEEEEE;
+    text-align: center;
+    margin: .8em;
+    padding-bottom: 10px;
+    position: relative;
+}
+.header_text::after {
+    position: absolute;
+    content: '';
+    border-bottom: 1px solid #EEEEEE;
+    width: 70%;
+    left: 15%;top: 100%;
+}
