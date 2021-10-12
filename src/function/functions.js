@@ -11,3 +11,7 @@ export const changeTemp = (temp) => {
     const newTemp = Math.floor(temp - 273.15);
     return newTemp;
 }
+export const changeTemp2 = (temp) => {
+    const newTemp = temp - 273.15;
+    return newTemp;
+}

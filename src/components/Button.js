@@ -3,8 +3,11 @@ import React from 'react'
 import { getData } from '../function/functions'
 //css
 import styles from './Button.module.css'
+//font awesome 5
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSearch } from '@fortawesome/free-solid-svg-icons'
 
-const Button = ({ text, city, show, setdata, setText }) => {
+const Button = ({ city, show, setdata, setText }) => {
 
     const clickHandler = async (e) => {
         e.preventDefault();
@@ -12,13 +15,21 @@ const Button = ({ text, city, show, setdata, setText }) => {
             stringInp: ""
         })
         show(true)
-        if(city) {
+        setdata({
+            show: false
+        })
+        if (city) {
             setTimeout(async () => {
                 show(false)
                 let fetchData = await getData(city);
                 setdata({
                     show: true,
-                    temp: fetchData.main.temp
+                    temp: fetchData.main.temp,
+                    minTemp: fetchData.main.temp_min,
+                    maxTemp: fetchData.main.temp_max,
+                    pressure: fetchData.main.pressure,
+                    humidity: fetchData.main.humidity,
+                    nameCountry: fetchData.name
                 })
             }, 4000)
         } else {
@@ -27,9 +38,7 @@ const Button = ({ text, city, show, setdata, setText }) => {
         }
     }
     return (
-        <div>
-            <button className={styles.btn} onClick={clickHandler}>{text}</button>
-        </div>
+        <button className={styles.btn} onClick={clickHandler}>{<FontAwesomeIcon icon={faSearch} />}</button>
     )
 }
 

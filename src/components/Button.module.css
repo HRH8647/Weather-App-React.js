@@ -1,13 +1,11 @@
 .btn {
-    display: block;
-    margin: 15px auto;
+    margin: 15px 0 10px 0;
     border: none;
-    width: 40%;
-    height: 1.7em;
+    width: 13%;
+    height: 2em;
     background-color: #EEEEEE;
     cursor: pointer;
     border-radius: 5px;
-    position: relative;
     transition: all .3s ease;
 }
 .btn:hover {

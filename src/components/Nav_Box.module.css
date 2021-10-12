@@ -1,0 +1,25 @@
+.container {
+    width: 60%;
+    margin: 10px auto 0 auto;
+}
+.container nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 2px 3px;
+}
+.container nav a {
+    text-decoration: none;
+    font-size: 13px;
+    color: #EEEEEE;
+    background-color: #7027A0;
+    padding: 4px 25px;
+    border-radius: 10px;
+    margin: 0 4px;
+    transition: all .3s;
+}
+.container nav a:hover {
+    background-color: #EEEEEE;
+    color: #7027A0;
+}

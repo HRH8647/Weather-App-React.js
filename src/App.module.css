@@ -9,9 +9,9 @@
 .box {
     /* background-color: #3D2C8D; */
     background-image: url('../src/image/weather.jpg');
-    background-size: contain;
+    background-size: cover;
     width: 20em;
-    height: 15em;
+    height: auto;
     border-radius: 20px;
     box-shadow: 0 0 10px #916BBF;
 }
