@@ -3,7 +3,7 @@ import React from 'react'
 import { changeTemp } from '../function/functions'
 import { changeTemp2 } from '../function/functions'
 //css
-import styles from '../components/TempData.module.css'
+import styles from './TempData.module.css'
 
 const TempData = ({ data }) => {
     const {temp, minTemp, maxTemp} = data;

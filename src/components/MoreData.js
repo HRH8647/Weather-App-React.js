@@ -1,6 +1,6 @@
 import React from 'react'
 //css
-import styles from '../components/MoreData.module.css'
+import styles from './MoreData.module.css'
 
 const MoreData = ({ data }) => {
     const { pressure, humidity, nameCountry } = data;

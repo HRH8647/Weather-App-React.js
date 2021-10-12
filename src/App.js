@@ -1,9 +1,9 @@
 import React from 'react'
 //components
 import Header from './components/Header'
-import Input from '../src/components/Input'
+import Input from './components/Input'
 //css
-import styles from '../src/App.module.css'
+import styles from './App.module.css'
 
 const App = () => {
     return (
