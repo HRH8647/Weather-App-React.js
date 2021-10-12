@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 //components
 import Button from './Button'
-import Nav_Box from './Nav_Box'
+import Navbox from './Navbox'
 //css
 import styles from './Input.module.css'
 //font awesome 5
@@ -45,7 +45,7 @@ const Input = () => {
                 <input type="text" value={stringInp} onChange={changeHandler} className={styles.input_field} /><br />
                 <span>please enter city or country to get information</span>
                 {show && <div className={styles.dataBox}><i className="fas fa-spinner fa-pulse"></i></div>}
-                {data.show && <Nav_Box data={data} />}
+                {data.show && <Navbox data={data} />}
                 <div className={styles.btnGroup}>
                     {data.show && <button onClick={resetHandler} type="button" className={styles.btn_reset}>{<FontAwesomeIcon icon={faRedoAlt} />}</button>}
                     <Button setText={setText} setdata={setData} show={setShow} city={stringInp} text="Search" />

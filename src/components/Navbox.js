@@ -1,11 +1,11 @@
 import React, {useState} from 'react'
 //css
-import styles from './Nav_Box.module.css'
+import styles from './Navbox.module.css'
 //components
 import TempData from './TempData'
 import MoreData from './MoreData'
 
-const Nav_Box = ({ data }) => {
+const Navbox = ({ data }) => {
 
     const [show, setShow] = useState(true)
     const [hide, setHide] = useState(false)
@@ -34,4 +34,4 @@ const Nav_Box = ({ data }) => {
     )
 }
 
-export default Nav_Box
+export default Navbox
