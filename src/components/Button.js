@@ -19,19 +19,21 @@ const Button = ({ city, show, setdata, setText }) => {
             show: false
         })
         if (city) {
-            setTimeout(async () => {
-                show(false)
-                let fetchData = await getData(city);
-                setdata({
-                    show: true,
-                    temp: fetchData.main.temp,
-                    minTemp: fetchData.main.temp_min,
-                    maxTemp: fetchData.main.temp_max,
-                    pressure: fetchData.main.pressure,
-                    humidity: fetchData.main.humidity,
-                    nameCountry: fetchData.name
-                })
-            }, 4000)
+                setTimeout(async () => {
+                    show(false)
+                    let fetchData = await getData(city)
+                    .catch(err => alert("City / Country Not Found !"))
+                    
+                    fetchData && setdata({
+                        show: true,
+                        temp: fetchData.main.temp,
+                        minTemp: fetchData.main.temp_min,
+                        maxTemp: fetchData.main.temp_max,
+                        pressure: fetchData.main.pressure,
+                        humidity: fetchData.main.humidity,
+                        nameCountry: fetchData.name
+                    })
+                }, 4000)
         } else {
             alert("Enter City or Country");
             show(false)
